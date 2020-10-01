@@ -1,7 +1,5 @@
-from pprint import pprint
-
 import pygame
-from i3ipc import Connection, Event
+from i3ipc import Connection
 
 pygame.init()
 
@@ -83,7 +81,7 @@ def i3_setup():
     i3.command("exec google-chrome-stable")
     i3.command("focus name 'gear bar'")
     i3.command("border none")
-    i3.command("resize shrink height 30 px")
+    i3.command("resize shrink width 30 px or 30 ppt")
 
 
 if __name__ == "__main__":
